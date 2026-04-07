@@ -47,6 +47,9 @@
 		},
 		{
 			"path": "../OFM-PVForecastModule"
+		},
+		{
+			"path": "../OFM-WasteCalendarModule"
 		}
 	],
 	"settings": {

@@ -13,6 +13,7 @@
 #include "FunctionBlocksModule.h"
 #include "EnergyPriceModule.h"
 #include "PVForecastModule.h"
+#include "WasteCalendarModule.h"
 #ifdef USE_AUTO_CONNECT
 #include <AutoConnect.h>
 #include <WebServer.h>
@@ -27,7 +28,11 @@ AutoConnectConfig config;
 
 void setup()
 {
+#ifdef FIRMWARE_REVISION
     openknx.init();
+#else
+    openknx.init(MAIN_ApplicationVersion);
+#endif
 #ifdef WLAN_WifiSSID    
     openknx.addModule(1, openknxWLANModule);
 #endif
@@ -44,6 +49,7 @@ void setup()
     openknx.addModule(9, openknxFunctionBlocksModule);
     openknx.addModule(10, openknxEnergyPriceModule);
     openknx.addModule(11, openknxPVForecastModule);
+    openknx.addModule(12, openknxWasteCalendarModule);
     openknx.setup();
 #ifdef USE_AUTO_CONNECT
     config.apid ="OpenKNX";

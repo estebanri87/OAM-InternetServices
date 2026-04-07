@@ -59,6 +59,15 @@
     <op:verify File="../lib/OFM-PVForecastModule/library.json" ModuleVersion="%PVF_VerifyVersion%" />
   </op:define>
 
+  <op:define prefix="WCL" ModuleType="25"
+    share="../lib/OFM-WasteCalendarModule/src/WasteCalendarModule.share.xml"
+    template="../lib/OFM-WasteCalendarModule/src/WasteCalendarModule.templ.xml"
+    NumChannels="2"
+    KoSingleOffset="1537"
+    KoOffset="1538">
+    <op:verify File="../lib/OFM-WasteCalendarModule/library.json" ModuleVersion="%WCL_VerifyVersion%" />
+  </op:define>
+
   <op:define prefix="SIP" ModuleType="22"
     share="../lib/OFM-SIPClientModule/src/SIPClientModule.share.xml"
     template="../lib/OFM-SIPClientModule/src/SIPClientModule.templ.xml"
