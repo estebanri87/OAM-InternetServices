@@ -13,3 +13,4 @@ include/versions.h
 data/
 src/Baggages/Thumbs.db
 Archiv_Build/
+.claude/CLAUDE.md

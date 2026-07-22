@@ -7,9 +7,6 @@
 			"path": "../OFM-InternetWeatherModule"
 		},
 		{
-			"path": "../OFM-SIPClientModule"
-		},
-		{
 			"path": "./lib/OFM-Network"
 		},
 		{
@@ -50,7 +47,8 @@
 		},
 		{
 			"path": "../OFM-WasteCalendarModule"
-		}
+		},
+
 	],
 	"settings": {
 		"cSpell.language": "en,de,de-DE",

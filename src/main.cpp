@@ -9,7 +9,6 @@
 #include "FileTransferModule.h"
 #include "Logic.h"
 #include "InternetWeatherModule.h"
-#include "SIPModule.h"
 #include "FunctionBlocksModule.h"
 #include "EnergyPriceModule.h"
 #include "PVForecastModule.h"
@@ -45,7 +44,6 @@ void setup()
 #endif
     openknx.addModule(6, openknxFileTransferModule);
     openknx.addModule(7, openknxInternetWeatherModule);
-    openknx.addModule(8, openknxSIPModule);
     openknx.addModule(9, openknxFunctionBlocksModule);
     openknx.addModule(10, openknxEnergyPriceModule);
     openknx.addModule(11, openknxPVForecastModule);
