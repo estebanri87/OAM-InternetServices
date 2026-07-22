@@ -10,6 +10,7 @@
 #include "Logic.h"
 #include "InternetWeatherModule.h"
 #include "FunctionBlocksModule.h"
+#include "NetworkBridgeModule.h"
 #include "EnergyPriceModule.h"
 #include "PVForecastModule.h"
 #include "WasteCalendarModule.h"
@@ -48,6 +49,7 @@ void setup()
     openknx.addModule(10, openknxEnergyPriceModule);
     openknx.addModule(11, openknxPVForecastModule);
     openknx.addModule(12, openknxWasteCalendarModule);
+    openknx.addModule(13, openknxNetworkBridgeModule);
     openknx.setup();
 #ifdef USE_AUTO_CONNECT
     config.apid ="OpenKNX";

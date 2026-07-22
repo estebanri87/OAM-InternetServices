@@ -48,7 +48,9 @@
 		{
 			"path": "../OFM-WasteCalendarModule"
 		},
-
+		{
+			"path": "../OFM-NetworkBridge"
+		}
 	],
 	"settings": {
 		"cSpell.language": "en,de,de-DE",
